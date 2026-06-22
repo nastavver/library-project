@@ -754,7 +754,7 @@ header {
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 425px) {
   .header-container {
     padding: 0;
     display: flex;
