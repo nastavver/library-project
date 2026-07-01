@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Библиотеки на карте Тамбовской области</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/model-library.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="map-page.html" class="circle-btn">Карта</a>
+            <a href="main-page.html" class="logo"></a>
+            <a href="about-project-page.html" class="circle-btn">Проекты</a>
+            <div class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__title">НАВИГАЦИЯ</div>
+            <a href="#" class="mobile-menu__item">
+                <img src="../images/images_main/map.png" alt="Карта" class="menu-icon">
+                <span class="menu-text">Карта</span>
+            </a>
+            <a href="#" class="mobile-menu__item">
+                <img src="../images/images_main/briefcase.png" alt="Портфель" class="menu-icon">
+                <span class="menu-text">Проекты</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="library-card-section">
+            <div class="library-card-section__inner">
+                <article class="library-card">
+                    <div class="library-card__image-container">
+                        <img src="../images/model-library-page/img_model.png" alt="Здание Межпоселенческой центральной библиотеки" class="library-card__image">
+                    </div>
+
+                    <div class="library-card__tags">
+                        <span class="library-card__tag library-card__tag--status">Статус: Центральная</span>
+                        <span class="library-card__tag library-card__tag--area">Площадь: XXX кв. м.</span>
+                    </div>
+
+                    <div class="library-card__content">
+                        <h2 class="library-card__title">
+                            Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека» Жердевского муниципального округа Тамбовской области
+                        </h2>
+                        <div class="library-card__footer">
+                            <p>Создана в рамках нацпроекта «Культура»/«Семья»: XXXX.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="library-contacts">
+            <div class="library-contacts__inner">
+                <address class="library-contacts__info">
+                    <div class="library-contacts__item">
+                        <span class="library-contacts__label">Адрес:</span> [Полный почтовый адрес с индексом].
+                    </div>
+                    
+                    <div class="library-contacts__item">
+                        <span class="library-contacts__label">Graphic работы:</span> Пн-Пт: с XX:XX до XX:XX, Сб: с XX:XX до XX:XX, Вс: выходной. (или указать иной график).
+                    </div>
+                    
+                    <div class="library-contacts__item">
+                        <span class="library-contacts__label">Контакты:</span> 
+                        Телефон: <a href="tel:+7XXXXXXXXXX" class="library-contacts__link">+X (XXX) XXX-XX-XX</a>, 
+                        E-mail: <a href="mailto:example@library.ru" class="library-contacts__link">example@library.ru</a>.
+                    </div>
+                    
+                    <div class="library-contacts__item library-contacts__item--socials">
+                        <span class="library-contacts__label">Веб-сайт / Соцсети:</span> 
+                        <a href="#" class="library-contacts__link" target="_blank" rel="noopener">
+                            [Ссылка на официальный сайт]
+                        </a>
+                        
+                        <div class="library-contacts__social-icons">
+                            <a href="#" class="library-contacts__icon-btn" aria-label="Мы в ВКонтакте" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M15.025 21.015c-6.66 0-10.455-4.56-10.613-12.158H7.87c.105 5.572 2.56 7.927 4.5 8.413V8.857H15.65v4.8c1.928-.21 3.96-2.4 4.643-4.8H23.63c-.533 3.013-2.73 5.2-4.305 6.112 1.575.833 4.148 2.76 5.168 6.046h-3.645c-.802-2.49-2.79-4.41-4.838-4.613v4.613h-1.015z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="library-contacts__icon-btn" aria-label="Мы в Telegram" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M21.23 4.23a1.44 1.44 0 0 0-1.42-.1L3.25 10.43a1.27 1.27 0 0 0-.12 2.34l4.28 1.42l1.6 4.93a1.28 1.28 0 0 0 2 .61l2.56-2.12l4.47 3.29a1.31 1.31 0 0 0 2.06-.72l3.43-14.71a1.41 1.41 0 0 0-.3-.15M8.93 13.56l8.8-5.5a.3.3 0 0 1 .4.44l-7.3 6.64v2a.37.37 0 0 1-.68.17l-1.22-3.75z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </section>
+
+        <section class="library-accordion-section">
+            <div class="library-accordion-section__inner">
+                <div class="library-accordion">
+                    
+                    <details class="library-accordion__item">
+                        <summary class="library-accordion__header">
+                            <span class="library-accordion__title">История библиотеки</span>
+                            <span class="library-accordion__arrow" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="library-accordion__content">
+                            <p>Здесь будет располагаться подробный текст об истории создания библиотеки, важных вехах развития, руководителях и переходе в статус модельной библиотеки нового поколения.</p>
+                        </div>
+                    </details>
+
+                    <details class="library-accordion__item">
+                        <summary class="library-accordion__header">
+                            <span class="library-accordion__title">Концепция библиотеки</span>
+                            <span class="library-accordion__arrow" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="library-accordion__content">
+                            <p>В данном разделе описывается современная концепция развития пространства, миссия библиотеки как интеллектуального и культурного центра Жердевского муниципального округа, новые подходы к работе с читателями и нацпроекты.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="library-features-section">
+            <div class="library-features-section__inner">
+                <div class="library-features">
+                    
+                    <div class="library-features__group">
+                        <h3 class="library-features__badge">Зонирование библиотеки:</h3>
+                        <ul class="library-features__list">
+                            <li>Детская зона (игровая, развивающая, для чтения).</li>
+                            <li>Зона тихого чтения и индивидуальной работы.</li>
+                            <li>Многофункциональный зал для мероприятий (лекций, мастер-классов, кинопоказов).</li>
+                            <li>Компьютерная зона с доступом к электронным ресурсам.</li>
+                            <li>Коворкинг-зона (для совместной работы, учебы и удаленной занятости).</li>
+                            <li>Творческая лаборатория / мастерская (арт-коворкинг). (Пространство для рукоделия, рисования, моделирования и цифрового творчества, оснащенное всем необходимым для реализации идей. Фото- и видеостудия с хромакеем, мультстудия, 3D принтер/ручка).</li>
+                            <li>Зона доступной среды (оборудована для маломобильных групп населения. Уточнение: пандусы, тактильная навигация, адаптированные рабочие места).</li>
+                            <li>Сервисная зона (место для кофе, воды, отдыха).</li>
+                        </ul>
+                    </div>
+
+                    <div class="library-features__group">
+                        <h3 class="library-features__badge">Технологии и оборудование:</h3>
+                        <ul class="library-features__list">
+                            <li>Современная система RFID-технологий</li>
+                            <li>Интернет / Wi-Fi для пользователей</li>
+                            <li>Интерактивное оборудование (информационный киоск/стол, планетарный сканер, сенсорная панель, песочница, интерактивный пол с развивающими играми и др.).</li>
+                            <li>Компьютерная техника и цифровые устройства (ноутбук, принтер, сканер, аудио- и видеооборудование и др.)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="library-project-section">
+            <div class="library-project-section__inner">
+                <a href="https://cloud.mail.ru/public/TPt4/NLUQhweub/1.%20ЦБ%20Жердевского%20МО/Дизайн-проект%20библиотеки/тамбов%20Model.pdf" class="library-project-btn" target="_blank" rel="noopener">
+                    ПОСМОТРЕТЬ ДИЗАЙН-ПРОЕКТ
+                </a>
+            </div>
+        </section>
+
+        <section class="photo-albums-section">
+            <div class="photo-albums-container">
+                
+                <h2 class="photo-albums-title">Фотоальбомы</h2>
+                
+                <div class="photo-albums-grid">
+                    
+                    <div class="photo-album-card">
+                        <a href="path/to/image-before-large.jpg" class="photo-album-card__image-link" data-fancybox="gallery" data-caption="До модернизации">
+                            <div class="photo-album-card__image-wrapper">
+                                <img src="path/to/image-before.jpg" alt="До модернизации" class="photo-album-card__img">
+                            </div>
+                        </a>
+                        <div class="photo-album-card__content">
+                            <h3 class="photo-album-card__title">До модернизации</h3>
+                            <a href="path/to/image-before-large.jpg" class="photo-album-card__btn" data-fancybox="gallery-btn-1">
+                                Посмотреть
+                                <svg class="photo-album-card__btn-arrow" width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="#382D0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="photo-album-card">
+                        <a href="path/to/image-after-large.jpg" class="photo-album-card__image-link" data-fancybox="gallery" data-caption="После модернизации">
+                            <div class="photo-album-card__image-wrapper">
+                                <img src="path/to/image-after.jpg" alt="После модернизации" class="photo-album-card__img">
+                            </div>
+                        </a>
+                        <div class="photo-album-card__content">
+                            <h3 class="photo-album-card__title">После модернизации</h3>
+                            <a href="path/to/image-after-large.jpg" class="photo-album-card__btn" data-fancybox="gallery-btn-2">
+                                Посмотреть
+                                <svg class="photo-album-card__btn-arrow" width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="#382D0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="contacts">
+            <a href="https://prlib.tambovlib.ru" target="_blank" rel="noopener noreferrer">tambovlib.ru</a>
+            <a href="https://новаябиблиотека.рф" target="_blank" rel="noopener noreferrer">новаябиблиотека.рф</a>
+        </div>
+        <div class="footer-row footer-row--top">
+            <img src="../images/images_footer/logo_culture.png" alt="Логотип национального проекта «Культура»">
+            <img src="../images/images_footer/logo_Pushkin_library.png" alt="Логотип Тамбовской областной универсальной научной библиотеки имени А.С.Пушкина">
+            <img src="../images/images_footer/logo_library_kids.png" alt="Логотип Тамбовской областной детской библиотеки">
+            <img src="../images/images_footer/logo_new_library.png" alt="Логотип проекта «Библиотека нового поколения»">
+        </div>
+        <div class="footer-row footer-row--bottom">
+            <img src="../images/images_footer/logo_family.png" alt="Логотип национального проекта «Семья»">
+            <img src="../images/images_footer/logo_ministry.png" alt="Логотип Правительства Тамбовской области | Министерство культуры Тамбовской области">
+            <img src="../images/images_footer/logo_genius.png" alt="Логотип проекта «Гений места»">
+        </div>
+    </footer>
+    <script type="text/javascript" src="../scripts/main.js"></script>
+
+</body>
