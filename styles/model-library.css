@@ -224,37 +224,26 @@ header {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================
-   ОБЩИЕ СТИЛИ ДЛЯ ОБОИХ БЛОКОВ (Глобальные настройки)
-   ========================================== */
-
-/* Внешняя полноширинная обертка карточки */
 .library-card-section {
-    background-color: #FAF2E5; /* Фон страницы */
+    background-color: #FAF2E5;
     width: 100%;
     box-sizing: border-box;
-    padding: 40px 24px; /* Идентичные отступы сверху/снизу и сбоку */
+    padding: 40px 24px;
 }
 
-/* Внешняя полноширинная обертка контактов */
 .library-contacts {
-    background-color: #5D6939; /* Глубокий зеленый фон */
+    background-color: #5D6939;
     width: 100%;
     box-sizing: border-box;
-    padding: 40px 24px; /* Точно такие же отступы, как у карточки выше */
+    padding: 40px 24px;
 }
 
-/* Центрирующие ограничители контента (делают выравнивание идеальным) */
 .library-card-section__inner,
 .library-contacts__inner {
-    max-width: 800px; /* Фиксированная одинаковая ширина контента */
-    margin: 0 auto;   /* Центрирование на больших мониторах */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-
-/* ==========================================
-   СЕКЦИЯ 1: СТИЛИ КАРТОЧКИ БИБЛИОТЕКИ
-   ========================================== */
 .library-card {
     display: flex;
     flex-direction: column;
@@ -329,10 +318,6 @@ header {
     color: #000000;
 }
 
-
-/* ==========================================
-   СЕКЦИЯ 2: СТИЛИ БЛОКА КОНТАКТОВ
-   ========================================== */
 .library-contacts__info {
     font-family: 'Jost', sans-serif;
     font-style: normal;
@@ -394,18 +379,14 @@ header {
     background-color: #ffffff;
 }
 
-
-/* ==========================================
-   АДАПТИВНОСТЬ (Для мобильных экранов)
-   ========================================== */
 @media (max-width: 576px) {
     .library-card-section, 
     .library-contacts {
-        padding: 30px 16px; /* Одинаково сужаем боковые отступы на смартфонах */
+        padding: 30px 16px;
     }
     
     .library-card__title {
-        font-size: 1.6rem; /* Чуть уменьшаем заголовок на мобилках, чтобы не ломал сетку */
+        font-size: 1.6rem;
     }
 
     .library-contacts__info {
@@ -420,40 +401,31 @@ header {
     }
 }
 
-/* ==========================================
-   СЕКЦИЯ 3: СТИЛИ ДЛЯ БЛОКА АККОРДЕОНОВ
-   ========================================== */
-
-/* Внешняя полноширинная обертка секции аккордеонов */
 .library-accordion-section {
-    background-color: #FAF2E5; /* Точно такой же фон, как у карточки библиотеки */
+    background-color: #FAF2E5;
     width: 100%;
     box-sizing: border-box;
-    padding: 40px 24px;        /* Строго идентичные отступы сверху/снизу и сбоку */
+    padding: 40px 24px;
 }
 
-/* Центрирующий ограничитель контента (задает идеальное выравнивание по сетке) */
 .library-accordion-section__inner {
-    max-width: 800px;          /* Одинаковая максимальная ширина контента */
-    margin: 0 auto;            /* Центрирование */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Сам контейнер для плашек */
 .library-accordion {
     display: flex;
     flex-direction: column;
-    gap: 16px;                 /* Расстояние между плашками */
+    gap: 16px;
     width: 100%;
 }
 
-/* Элемент аккордеона (details) */
 .library-accordion__item {
     border-radius: 12px;
-    overflow: hidden;          /* Защита от вылезания кремового фона за скругления */
+    overflow: hidden;
     transition: box-shadow 0.2s ease;
 }
 
-/* Убираем стандартные маркеры браузера */
 .library-accordion__item summary::-webkit-details-marker {
     display: none;
 }
@@ -461,9 +433,8 @@ header {
     list-style: none;
 }
 
-/* Шапка плашки */
 .library-accordion__header {
-    background-color: #AAB97E; /* Зеленый цвет плашки */
+    background-color: #AAB97E;
     padding: 18px 24px;
     display: flex;
     justify-content: space-between;
@@ -474,10 +445,9 @@ header {
 }
 
 .library-accordion__header:hover {
-    background-color: #9ba970; /* Эффект при наведении */
+    background-color: #9ba970;
 }
 
-/* Заголовок внутри плашки (Jura, 32px переведен в rem для адаптивности) */
 .library-accordion__title {
     font-family: 'Jura', sans-serif;
     font-size: 1.5rem;         
@@ -486,7 +456,6 @@ header {
     color: #000000;
 }
 
-/* Стрелочка */
 .library-accordion__arrow {
     width: 24px;
     height: 24px;
@@ -502,12 +471,10 @@ header {
     height: 100%;
 }
 
-/* Анимация разворота стрелки при раскрытии */
 .library-accordion__item[open] .library-accordion__arrow {
     transform: rotate(180deg);
 }
 
-/* Раскрывающееся текстовое поле (Кремовый фон) */
 .library-accordion__content {
     background-color: #FAF2E5; 
     padding: 20px 24px;
@@ -524,12 +491,9 @@ header {
     margin: 0;
 }
 
-/* ==========================================
-   АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ЭКРАНОВ
-   ========================================== */
 @media (max-width: 576px) {
     .library-accordion-section {
-        padding: 30px 16px;    /* Точно такое же сужение отступов на смартфонах, как и везде */
+        padding: 30px 16px;
     }
     
     .library-accordion__header {
@@ -545,77 +509,65 @@ header {
     }
 }
 
-/* ==========================================
-   СЕКЦИЯ 4: ЗОНИРОВАНИЕ И ТЕХНОЛОГИИ (ОПТИМИЗИРОВАННАЯ)
-   ========================================== */
-
-/* Внешняя полноширинная обертка */
 .library-features-section {
-    background-color: #FAF2E5; /* Общий фоновый цвет страницы */
+    background-color: #FAF2E5;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 24px 40px 24px; /* Отступы согласованы с остальными секциями */
+    padding: 20px 24px 40px 24px;
 }
 
-/* Центрирующий контейнер на 800px */
 .library-features-section__inner {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
 }
 
-/* Общий контейнер для групп */
 .library-features {
     display: flex;
     flex-direction: column;
-    gap: 35px; /* Расстояние между блоком Зонирования и Технологий */
+    gap: 35px;
 }
 
 .library-features__group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Чтобы плашка-заголовок не растягивалась во всю ширину */
-    gap: 16px; /* Отступ от плашки до начала списка */
+    align-items: flex-start;
+    gap: 16px;
 }
 
-/* Плашка-заголовок (Шрифт Jura, Цвет #DBDAAE) */
 .library-features__badge {
     font-family: 'Jura', sans-serif;
-    font-size: 1.25rem; /* Аккуратный, читаемый размер для плашки */
+    font-size: 1.25rem;
     font-weight: 400;
     color: #000000;
-    background-color: #DBDAAE; /* Цвет из ТЗ */
+    background-color: #DBDAAE;
     padding: 8px 18px;
-    border-radius: 8px; /* Скругление углов плашки */
+    border-radius: 8px;
     margin: 0;
     line-height: 1.2;
 }
 
-/* Элемент списка (Шрифт Jost, оптимизированный размер) */
 .library-features__list {
     font-family: 'Jost', sans-serif;
-    font-size: 1.15rem; /* Оптимальный размер вместо огромных 35px для аккуратного текста */
-    line-height: 1.5;   /* Свободный межстрочный интервал для комфортного чтения */
+    font-size: 1.15rem;
+    line-height: 1.5;
     font-weight: 400;
     color: #000000;
     margin: 0;
-    padding-left: 24px; /* Отступ слева для маркеров-точек */
+    padding-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Расстояние между пунктами списка */
-    list-style-type: disc; /* Стандартные круглые маркеры */
+    gap: 12px;
+    list-style-type: disc;
 }
 
 .library-features__list li {
-    padding-left: 4px; /* Небольшой зазор между точкой и текстом */
+    padding-left: 4px;
 }
 
-/* ==========================================
-   АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ЭКРАНОВ
-   ========================================== */
 @media (max-width: 768px) {
     .library-features-section {
-        padding: 15px 16px 30px 16px; /* Заужение отступов секции */
+        padding: 15px 16px 30px 16px;
     }
 
     .library-features {
@@ -623,7 +575,7 @@ header {
     }
 
     .library-features__list {
-        font-size: 1.05rem; /* Слегка уменьшаем на смартфонах */
+        font-size: 1.05rem;
         padding-left: 20px;
         gap: 10px;
     }
@@ -634,57 +586,43 @@ header {
     }
 }
 
-/* ==========================================
-   СЕКЦИЯ 5: КНОПКА ДИЗАЙН-ПРОЕКТА (ИСПРАВЛЕННАЯ)
-   ========================================== */
-
-/* Внешняя полноширинная обертка */
 .library-project-section {
-    background-color: #FAF2E5; /* Общий фон страницы */
+    background-color: #FAF2E5;
     width: 100%;
     box-sizing: border-box;
-    padding: 30px 24px 50px 24px; 
+    padding: 30px 24px 50px 24px;
 }
 
-/* Центрирующий контейнер-ограничитель на 800px */
 .library-project-section__inner {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
     display: flex;
-    justify-content: center; /* Центрирует кнопку строго по горизонтали */
+    justify-content: center;
 }
 
-/* Стили самой кнопки-ссылки */
 .library-project-btn {
     font-family: 'Jura', sans-serif; 
     font-size: 1.3rem;               
     font-weight: 500;                
     letter-spacing: 0.05em;          
     text-transform: uppercase;       
-    color: #FAF2E5;                  /* Кремовый цвет текста из ТЗ */
-    background-color: #5D6939;       /* Темно-зеленый цвет фона из ТЗ */
-    
-    /* Размеры и скругления, как у предыдущих плашек */
+    color: #FAF2E5;
+    background-color: #5D6939;
     padding: 16px 36px;              
-    border-radius: 12px;             /* Скругление углов 12px в точности как у прошлых блоков */
-    
+    border-radius: 12px;
     text-decoration: none;           
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-    /* Настройки плавной анимации */
     transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* --- ЭФФЕКТЫ ПРИ НАВЕДЕНИИ И КЛИКЕ (HOVER & ACTIVE) --- */
-
 .library-project-btn:hover {
-    background-color: #6a7742;       /* Мягкое осветление фирменного зеленого оттенка */
-    transform: translateY(-2px);     /* Легкий эффект "приподнимания" кнопки */
-    box-shadow: 0 6px 20px rgba(93, 105, 57, 0.15); /* Аккуратная тень */
+    background-color: #6a7742;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(93, 105, 57, 0.15);
 }
 
 .library-project-btn:active {
@@ -692,84 +630,68 @@ header {
     box-shadow: 0 3px 10px rgba(93, 105, 57, 0.1);
 }
 
-/* ==========================================
-   АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ЭКРАНОВ
-   ========================================== */
 @media (max-width: 576px) {
     .library-project-section {
         padding: 20px 16px 40px 16px;
     }
     
     .library-project-btn {
-        width: 100%;                 /* На маленьких смартфонах кнопка растягивается во всю ширину */
+        width: 100%;
         font-size: 1.1rem;           
         padding: 14px 24px;
-        border-radius: 10px;         /* Чуть уменьшаем скругление на мобильных для аккуратности */
+        border-radius: 10px;
     }
 }
 
-/* ==========================================
-   СЕКЦИЯ 6: ФОТОАЛЬБОМЫ (ИСПРАВЛЕННАЯ СЕТКА)
-   ========================================== */
-
-/* Подключение шрифта с засечками (если не был подключен ранее) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap');
 
 .photo-albums-section {
-    background-color: #FAF2E5; /* Общий фон страницы */
+    background-color: #FAF2E5;
     width: 100%;
     box-sizing: border-box;
     padding: 40px 24px 60px 24px;
 }
 
-/* Ограничитель контента по системной сетке */
 .photo-albums-container {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
 }
 
-/* Заголовок секции */
 .photo-albums-title {
     font-family: 'Jura', sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    color: #7F8F4D; /* Оливковый цвет заголовка */
+    color: #7F8F4D;
     margin: 0 0 28px 0;
     text-align: left;
 }
 
-/* Современная флекс-сетка: выстраивает элементы в один ряд */
 .photo-albums-grid {
     display: flex;
-    flex-direction: row;        /* Строго в один ряд по умолчанию */
-    justify-content: space-between; /* Распределяет карточки по краям контейнера */
-    gap: 24px;                  /* Фиксированный отступ между карточками */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Карточка альбома */
 .photo-album-card {
-    background-color: #AAB97E;  /* Светло-оливковый фон карточки */
-    border-radius: 17px;        /* Радиус скругления из ТЗ */
+    background-color: #AAB97E;
+    border-radius: 17px;
     padding: 16px;
     box-sizing: border-box;
-    flex: 1;                    /* Карточки будут делить пространство поровну */
-    max-width: calc(50% - 12px); /* Ограничение, чтобы они занимали ровно половину строки за вычетом зазора */
-    
-    /* Настройки анимации всей карточки */
+    flex: 1;
+    max-width: calc(50% - 12px);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Эффект наведения на ВСЮ карточку */
 .photo-album-card:hover {
-    transform: translateY(-5px); /* Легкое приподнимание */
+    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(127, 143, 77, 0.2);
 }
 
-/* Контейнер для фиксации пропорций изображения */
 .photo-album-card__image-link {
     display: block;
     text-decoration: none;
@@ -780,86 +702,70 @@ header {
 
 .photo-album-card__image-wrapper {
     width: 100%;
-    aspect-ratio: 4 / 3;        /* Строгое сохранение пропорций 4:3 */
-    background-color: #DBDAAE;  /* Цвет-заглушка до момента загрузки фото */
+    aspect-ratio: 4 / 3;
+    background-color: #DBDAAE;
     position: relative;
     overflow: hidden;
 }
 
-/* Стилизация самого изображения внутри адаптивного контейнера */
 .photo-album-card__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;          /* Фото заполнит область без искажений */
+    object-fit: cover;
     display: block;
     transition: transform 0.4s ease;
 }
 
-/* Легкое масштабирование фото при наведении на карточку */
 .photo-album-card:hover .photo-album-card__img {
     transform: scale(1.04);
 }
 
-/* Блок с текстом и кнопкой под фотографией */
 .photo-album-card__content {
     padding: 16px 4px 4px 4px;
-    text-align: center;         /* Центрирование содержимого */
+    text-align: center;
 }
 
-/* Подписи к фото */
 .photo-album-card__title {
-    font-family: 'Noto Serif TC', serif; /* Премиальный шрифт с засечками */
+    font-family: 'Noto Serif TC', serif;
     font-size: 1.25rem;
     font-weight: 400;
-    color: #382D0C;             /* Темно-коричневый цвет текста */
+    color: #382D0C;
     margin: 0 0 16px 0;
 }
 
-/* Внутренняя интерактивная кнопка «Посмотреть» */
 .photo-album-card__btn {
     font-family: 'Jura', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: #382D0C;
-    background-color: #FAF2E5;  /* Светлый кремовый цвет */
+    background-color: #FAF2E5;
     text-decoration: none;
-    
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
     padding: 10px 24px;
-    border-radius: 100px;       /* Капсульная форма кнопки внутри карточки */
-    
+    border-radius: 100px;
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* Иконка стрелочки */
 .photo-album-card__btn-arrow {
     margin-left: 10px;
     transition: transform 0.25s ease;
 }
 
-/* Эффект наведения конкретно на внутреннюю кнопку */
 .photo-album-card__btn:hover {
     background-color: #382D0C;
     color: #FAF2E5;
 }
 
-/* Меняем цвет стрелочки на кремовый при наведении на кнопку */
 .photo-album-card__btn:hover .photo-album-card__btn-arrow path {
     stroke: #FAF2E5;
 }
 
-/* Эффект движения стрелки вперед при наведении на карточку */
 .photo-album-card:hover .photo-album-card__btn-arrow {
     transform: translateX(4px);
 }
 
-
-/* ==========================================
-   АДАПТИВНОСТЬ ДЛЯ СМАРТФОНОВ
-   ========================================== */
 @media (max-width: 650px) {
     .photo-albums-section {
         padding: 30px 16px 40px 16px;
@@ -868,22 +774,20 @@ header {
     .photo-albums-title {
         font-size: 1.6rem;
         margin-bottom: 20px;
-        text-align: center;    /* На мобильных центрируем заголовок */
+        text-align: center;
     }
     
-    /* Перестраиваем флекс-сетку в одну вертикальную колонку */
     .photo-albums-grid {
-        flex-direction: column; /* Карточки встают друг под другом */
-        gap: 20px;              /* Отступ между карточками по вертикали */
+        flex-direction: column;
+        gap: 20px;
     }
     
     .photo-album-card {
         width: 100%;
-        max-width: 100%;        /* Снимаем ограничение по ширине на мобильных */
+        max-width: 100%;
     }
 }
 
-/* ===== ФУТЕР ===== */
 .site-footer {
     display: flex;
     flex-direction: column;
